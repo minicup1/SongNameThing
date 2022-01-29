@@ -81,7 +81,7 @@ local function checkLogs()
 		return false 
 	end
 end
--- is this less gay than shared.botLogs == true? probbaly not 
+-- is this less gay than shared.botLogs == true? probaly not 
 
 -- Set up logs 
 if checkLogs() then 
@@ -193,7 +193,7 @@ game.Players.PlayerChatted:Connect(function(PlayerChatType, sender, message, rec
 	if string.match(sentMessage, ";stop") --[[and tostring(sender) == tostring(game.Players.LocalPlayer.Name)]] and shared.inUse then 
 		if checkLogs() then 
 			rconsoleprint('@@RED@@')
-			rconsoleprint("\n"..tostring(sender).."requested the current song to stop.")
+			rconsoleprint("\n"..tostring(sender).." requested the current song to stop.")
 		end
 		shared.inUse = false
 		shared.forceStop = true
@@ -299,7 +299,7 @@ game.Players.PlayerChatted:Connect(function(PlayerChatType, sender, message, rec
 			
 		else 
 			-- send that the user is a retard 
-			saySomething("🤖 I cannot read hashtags,"..songRequester..". Please try a more SFW song.") -- requester isn't set yet? 
+			saySomething("🤖 I cannot read hashtags, "..songRequester..". Please try a more SFW song.") -- requester isn't set yet? 
 			if checkLogs() then 
 				rconsoleprint('@@RED@@')
 				rconsoleprint("\n"..songRequester.." requested a song with a hashtag in it. Their opinion was automatically filtered.")
