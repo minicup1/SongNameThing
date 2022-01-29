@@ -263,7 +263,7 @@ game.Players.PlayerChatted:Connect(function(PlayerChatType, sender, message, rec
 					for i, v in pairs(lyrics) do
 						task.wait(shared.sayDelay)
 						if shared.forceStop then -- i wonder if there's another way to do this lmao 
-							saySomething("🤖"..tostring(sender).." has requested the current song to be terminated. I am now open for more song requests.")
+							saySomething("🤖 "..tostring(sender).." has requested the current song to be terminated. I am now open for more song requests.")
 							break 
 						end
 						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🎵 | "..v, "All")
@@ -293,7 +293,7 @@ game.Players.PlayerChatted:Connect(function(PlayerChatType, sender, message, rec
 			else -- send that the user is a retard 
 				if checkLogs() then 
 					rconsoleprint('@@RED@@')
-					rconsoleprint("\n"..songRequester.." just said ;lyrics for some reason. Their opinion was automaticlly filtered.")
+					rconsoleprint("\n"..songRequester.." just said ;lyrics for some reason. Their opinion was automatically filtered.")
 				end
 			end
 			
@@ -302,7 +302,7 @@ game.Players.PlayerChatted:Connect(function(PlayerChatType, sender, message, rec
 			saySomething("🤖 I cannot read hashtags,"..songRequester..". Please try a more SFW song.") -- requester isn't set yet? 
 			if checkLogs() then 
 				rconsoleprint('@@RED@@')
-				rconsoleprint("\n"..songRequester.." requested a song with a hashtag in it. Their opinion was automaticlly filtered.")
+				rconsoleprint("\n"..songRequester.." requested a song with a hashtag in it. Their opinion was automatically filtered.")
 			end
 		end
 	else -- shield your eyes from the ugly code 
