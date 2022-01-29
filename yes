@@ -41,7 +41,7 @@ end
 spawn(function()
 	notify("🥳 Good news! You can now stop songs from playing.", 5)
 	task.wait(1)
-	notify("Use the command ';stop' to perform this action. Others cannot use this command.", 5)
+	notify("Use the command ';stop' to perform this action. Others can use this command, I will try to add a blacklist from ;stop.", 5)
 end)
 
 
@@ -88,7 +88,7 @@ if checkLogs() then
 	rconsoleclear()
 	rconsolename("Lyrics Bot Logs")
 	rconsoleprint('@@WHITE@@')
-	rconsoleprint("Made by garfieldcatto on V3rmillion\n")
+	rconsoleprint("Made by garfieldcatto on V3rmillion, edited by minicup\n")
 end
 
 -- Anti-Fling
